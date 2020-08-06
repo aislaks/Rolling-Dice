@@ -1,0 +1,35 @@
+table {
+    border: 5px solid white;
+    border-collapse: collapse;
+    background-color: #800000;
+    color: white;
+}
+
+th,
+td {
+    padding: 15px;
+    border: 3px solid white;
+}
+
+body {
+    background-image: url("1.jpg");
+}
+
+table {
+    margin: 6%;
+}
+
+.button1 {
+    background-image: url("2.gif");
+    color: white;
+    border: 2px solid maroon;
+    padding: 30px 32px;
+    margin: 4px 2px;
+    text-align: center;
+    display: inline-block;
+}
+
+.button1:hover {
+    border: 2px solid white;
+    color: white;
+}

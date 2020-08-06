@@ -1,0 +1,56 @@
+<!--
+ASSIGNMENT 2 - ROLL A DICE
+Adhrika Udaylal Pai
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ROLL A DICE</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+
+
+  <body>
+    <script>
+    function rolling(){
+     var random = 1 + Math.floor(Math.random() * 6);
+     return random;
+    }
+    </script>
+    <center>
+    <table border="1" style="width:50%">
+    <script>
+         var array =[0,0,0,0,0,0];
+            var face = 0;
+         var number = prompt("Enter your lucky number! Let's roll :)");
+         for(var j=0;j<number;j++){
+          face = rolling();
+         switch (face) {
+                    case 1:  array[0]=(array[0]+1);
+                             break;
+                    case 2:  array[1]=(array[1]+1);
+                             break;
+                    case 3:  array[2]=(array[2]+1);
+                             break;
+                    case 4:  array[3]=(array[3]+1);
+                             break;
+                    case 5:  array[4]=(array[4]+1);
+                             break;
+                    case 6:  array[5]=(array[5]+1);
+                             break;
+                   default: break;
+                   }
+          }
+         document.write("<tr><td style='width: 100px; text-align: center;'>FACE</td>");
+         document.write("<td style='width: 100px; text-align: center;'>FREQUENCY</td></tr>");
+            for (var i = 0; i < 6; i++) {
+          document.write("<tr><td style='width: 100px; text-align: center;'>"+ (i+1) +"</td>");
+                document.write("<td style='width: 100px; text-align: center;'>" + array[i] + "</td></tr>");
+            }
+    </script>
+    </table>
+    <input type="button" value="Wanna try again? CLICK HERE! :)" onClick="window.location.reload()" class="button1">
+  </center>
+  </body>
+</html>
